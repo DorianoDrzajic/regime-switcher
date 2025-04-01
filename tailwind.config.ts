@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Finance-specific colors
+				finance: {
+					bull: '#22c55e', // Green for bullish/positive returns
+					bear: '#ef4444', // Red for bearish/negative returns
+					neutral: '#f59e0b', // Amber for neutral/consolidation
+					volatility: '#8b5cf6', // Purple for volatile regimes
+					chart: {
+						grid: '#1f2937',
+						line: '#60a5fa',
+						area: 'rgba(96, 165, 250, 0.2)',
+					}
 				}
 			},
 			borderRadius: {
